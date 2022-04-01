@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            background-image: image("imagens/arma.jpg");
+        }
+    .circulo {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 50px;
+        right: 2rem;
+        animation: zoom 10s;
+       transform: 1s;
+    }    
+    .moveQuadrado .circulo {
+        opacity: 0;
+    }
+
+    .adicona-imagem{
+          opacity: 0;
+    }
+    .adicona-imagem .tudo{
+        opacity: 1;
+    }
+
+    @keyframes zoom {
+        
+        0%{
+            transform: translateY(20rem) rotateY(-20deg);
+        }
+        10%{
+            
+            transform: rotatex(100deg) rotatey(2rem);
+        }
+        100%{
+           
+          
+        }
+    }
+    </style>
+  
+</head>
+
+
+    <body>
+ <div class="tudo">
+        <div class="circulo"></div>
+</div>
+<div class="adiciona">
+    <img src="imagens/arma.jpg" alt="" srcset="">
+</div>
+    </body>
+
+
+
+<script src="script-teste.js"></script>
+</html>
